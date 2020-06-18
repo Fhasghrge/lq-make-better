@@ -1,0 +1,86 @@
+$myRem: 0.2777vw;
+.range {
+  main {
+    width: 250 * $myRem;
+    height: 230 * $myRem;
+    background-color: rgba(255,255,255,.5);
+    margin: 0 auto;
+    overflow-y: scroll;
+    ul {
+      margin: 2 * $myRem 2 * $myRem;
+      li {
+        box-sizing: border-box;
+        padding: 1 * $myRem 5 * $myRem;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        .name-img {
+          display: flex;
+          .rangelogo {
+            font-size: 20 * $myRem;
+            text-align: center;
+            color: rgb(130, 130, 130);
+            line-height: 30 * $myRem;
+            width: 30 * $myRem;
+            font-family: PingFangSC-Regular;
+            position: relative;
+            img {
+              width: 22 * $myRem;
+              height: 22 * $myRem;
+              position: absolute;
+              top: 0;
+              bottom: 0;
+              left: 0;
+              right: 0;
+              margin: auto;
+            }
+          }
+          .img {
+            width: 30 * $myRem;
+            height: 30 * $myRem;
+            border-radius: 50%;
+            overflow: hidden;
+            img {
+              width: 30 * $myRem;
+              height: 30 * $myRem;
+            }
+          }
+          .name {
+            line-height: 30 * $myRem;
+            text-indent: 5 * $myRem;
+            font-size: 12 * $myRem;
+          }
+        }
+        .score {
+          line-height: 30 * $myRem;
+          padding-right: 4 * $myRem;
+          font-size: 12 * $myRem;
+        }
+        &:nth-of-type(odd) {
+          background-color: rgb(243, 243, 243);
+        }
+        &:nth-of-type(even) {
+          background-color: rgb(255, 255, 255);
+        }
+      }
+    }
+  }
+  footer {
+    button {
+      position: absolute;
+      background-color: rgb(145, 231, 115);
+      font-size: 15 * $myRem;
+      font-weight: bold;
+      color: white;
+      border: 0;
+      border-radius: 6 * $myRem;
+      margin: 0 auto;
+      display: block;
+      width: 200 * $myRem;
+      height: 35 * $myRem;
+      bottom: 40 * $myRem;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}

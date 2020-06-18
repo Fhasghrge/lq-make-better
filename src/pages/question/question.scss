@@ -1,0 +1,66 @@
+$myRem :0.2777vw;
+#question {
+  text-align: center;
+  header {
+    width: 260* $myRem;
+    margin: 2* $myRem auto;
+    p {
+      font-size: 13* $myRem;
+      margin: 4 * $myRem 0;
+      text-align: left;
+      display: flex;
+      .num {
+        flex: 1;
+      }
+      .content{
+        flex: 6;
+      }
+    }
+  }
+  main {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 260* $myRem;
+    margin: 0 auto;
+    li {
+      list-style: none;
+      background-color: white;
+      // width:100* $myRem;
+      width: 70%;
+      height: 30* $myRem;
+      margin:10* $myRem auto;
+      font-size: 16* $myRem;
+      line-height: 30* $myRem;
+      border-radius: 3* $myRem;
+      background-color: rgb(198, 242, 172);
+    }
+    .active {
+      background-color: rgb(128, 210, 157);
+    }
+  }
+  footer {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 260* $myRem;
+    bottom: 20* $myRem;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    button {
+      background-color: rgb(145, 231, 115);
+      font-size: 16* $myRem;
+      font-weight: bold;
+      color: white;
+      border: none;
+      border-radius: 8* $myRem;
+      display: block;
+      width: 100* $myRem;
+      height: 30* $myRem;
+    }
+  }
+}

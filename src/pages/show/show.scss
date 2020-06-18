@@ -1,0 +1,267 @@
+$myRem :0.2777vw;
+#show {
+  text-align: center;
+  header {
+    border: 1px solid black;
+    width: 50* $myRem;
+    height: 50* $myRem;
+    border-radius: 50%;
+    margin: 0 auto;
+    position: relative;
+    &:after {
+      // 这里手动调节的估计会有bug
+      content: '';
+      background-image: url('../../assets/image/hat.png');
+      background-size: 62 * $myRem 18 * $myRem;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: -10 * $myRem;
+      left: -5.8 * $myRem;
+      width: 62 * $myRem; height: 18 * $myRem;
+      z-index: 100;
+    }
+    div {
+      border-radius: 50%;
+      overflow: hidden;
+      img {
+        display: inline-block;
+        width: 50* $myRem;
+        height: 50* $myRem;
+        position: relative;
+      }
+    }
+  }
+  main {
+    position: relative;
+    overflow: hidden;
+    width: 260* $myRem;
+    height: 180* $myRem;
+    margin: 0 auto;
+    .none {
+      display: none;
+    }
+    .view-title {
+      margin-top: 120* $myRem;
+      font-size:15* $myRem;
+    }
+    .level4{ 
+      .view-main {
+        position: absolute;
+        left: 50%;
+        top: 50* $myRem;
+        transform: translateX(-50%);
+        width: 100* $myRem;
+      }
+      .view-plugin{
+        position: absolute;
+        width: 50* $myRem;
+        top: 10* $myRem;
+        z-index: -1;
+      }
+      .view-name{
+        display: inline-block;
+        position: absolute;
+        top: 58* $myRem;
+        color: white;
+        font-weight: bold;
+        font-size: 20* $myRem;
+        left: 50%;
+        transform: translateX(-50%) rotate(-3deg);
+      }
+      .view-grade{
+        position: absolute;
+        top: 19* $myRem;
+        z-index: 99;
+        left: 148* $myRem;
+        color: white;
+        font-weight: bold;
+        font-size: 15* $myRem;
+        transform: rotate(20deg);
+      }
+    }
+    .level3 {
+      .view-main {
+        position: absolute;
+        left: 50%;
+        top: 30* $myRem;
+        transform: translateX(-50%);
+        width: 100* $myRem;
+      }
+      .view-name{
+        box-sizing: border-box;
+        display: inline-block;
+        position: absolute;
+        top: 49* $myRem;
+        color: white;
+        font-weight: bold;
+        font-size: 12 * $myRem;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: space-between;
+        width: 82*$myRem;
+        line-height: 22*$myRem;
+        text {
+          display: block;
+        }
+      }
+      .view-grade{
+        // display: none;
+        position: absolute;
+        top: 37* $myRem;
+        background-color: rgb(186, 232, 197);
+        color: rgb(1, 68, 1);
+        z-index: 99;
+        left:50%;
+        transform: translateX(-50%);
+        font-weight: bold;
+        font-size: 28* $myRem;
+        line-height: 48* $myRem;
+        border-radius: 50%;
+        width: 48* $myRem;
+        height: 48* $myRem;
+        overflow: hidden;
+      }
+    }
+    .level2{
+      .view-main {
+        position: absolute;
+        left: 50%;
+        top: 30* $myRem;
+        transform: translateX(-50%);
+        width: 100* $myRem;
+      }
+      .view-name{
+        display: inline-block;
+        position: absolute;
+        top:43 * $myRem;
+        color: white;
+        font-weight: bold;
+        font-size: 12* $myRem;
+        left: 50%;
+        transform: translateX(-70%);
+        padding-right: 0;
+      }
+      .view-grade{
+        position: absolute;
+        top: 57* $myRem;
+        color: rgb(1, 68, 1);
+        z-index: 99;
+        left:50%;
+        transform: translateX(-60%);
+        font-weight: bold;
+        font-size: 22* $myRem;
+        line-height: 48* $myRem;
+        border-radius: 50%;
+        width: 48* $myRem;
+        height: 48* $myRem;
+        overflow: hidden;
+      }
+    }
+    .level1{
+      .view-main {
+        position: absolute;
+        left: 50%;
+        top: 40* $myRem;
+        transform: translateX(-50%);
+        width: 100* $myRem;
+      }
+      .view-name{
+        display: inline-block;
+        position: absolute;
+        top:44* $myRem;
+        color: white;
+        font-weight: bold;
+        font-size: 12* $myRem;
+        left: 50%;
+        transform: translateX(-140%);
+        padding-right: 0;
+      }
+      .view-grade{
+        position: absolute;
+        top: 44* $myRem;
+        color: rgb(1, 68, 1);
+        z-index: 99;
+        left:50%;
+        transform: translateX(-60%);
+        font-weight: bold;
+        font-size: 22* $myRem;
+        line-height: 48* $myRem;
+        border-radius: 50%;
+        width: 48* $myRem;
+        height: 48* $myRem;
+        overflow: hidden;
+      }
+    }
+    .level0 {
+      .view-main {
+        position: absolute;
+        left: 50%;
+        top: 40* $myRem;
+        transform: translateX(-50%);
+        width: 100* $myRem;
+      }
+      .view-plugin{
+        position: absolute;
+        width: 100* $myRem;
+        top: 50* $myRem;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 9;
+      }
+      .view-name{
+        display: inline-block;
+        position: absolute;
+        top:52* $myRem;
+        color: white;
+        font-weight: bold;
+        font-size: 12* $myRem;
+        left: 50%;
+        transform: translateX(-62%);
+        z-index:99;
+        padding-right: 0;
+      }
+      .view-grade{
+        position: absolute;
+        top: 54* $myRem;
+        color: rgb(1, 68, 1);
+        z-index: 99;
+        left:50%;
+        transform: translateX(-60%);
+        font-weight: bold;
+        font-size: 22* $myRem;
+        line-height: 48* $myRem;
+        border-radius: 50%;
+        width: 48* $myRem;
+        height: 48* $myRem;
+        overflow: hidden;
+      }
+    }
+  }
+  footer {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 260* $myRem;
+    bottom: 30* $myRem;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    button {
+      background-color: rgb(145, 231, 115);
+      font-size: 16* $myRem;
+      font-weight: bold;
+      color: white;
+      border: none;
+      border-radius: 8* $myRem;
+      display: block;
+      width: 100* $myRem;
+      height: 30* $myRem;
+      &:disabled {
+        color: rgb(161, 161, 161);
+        background-color: rgb(128, 124, 120);
+      }
+    }
+  }
+}

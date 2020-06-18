@@ -1,0 +1,43 @@
+$myRem :0.2777vw;
+* {
+  padding: 0;
+  margin: 0;
+}
+html {
+  overflow: hidden;
+  /* 让页面不能滑动 */
+  font-size: 0.2777vw;
+  position: relative;
+}
+body {
+  height: 100vh;
+  position: fixed;
+  width: 100vw;
+  background-image: url('./assets/image/background.png');
+  background-size: 100vw 100vh;
+  .slogan, .uestc {
+    width: 240* $myRem;
+    display: block;
+    position: absolute;
+    top: 80* $myRem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+  }
+  .uestc {
+    width: 90* $myRem;
+    top: 36* $myRem;
+  }
+  #root >main {
+    box-sizing: border-box;
+    padding-top: 89* $myRem;
+    width: 310* $myRem;
+    height: 413 * $myRem;
+    position: absolute;
+    top: 119* $myRem;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: rgba(242, 242, 243, 0.8);
+    border-radius: 8* $myRem;
+  }
+}
