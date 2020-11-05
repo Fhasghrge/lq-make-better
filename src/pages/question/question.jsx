@@ -182,14 +182,6 @@ class Question extends Component {
     });
   }
   postInfo() {
-    const nickname = this.props.nickName;
-    const openid = Cookies.get('openid');
-    const iconurl = this.props.iconUrl;
-    // 异常跳转
-    if(!nickname || !openid || !iconurl) {
-      alert('正在获取信息...')
-      window.location.href = 'http://starstudio.uestc.edu.cn/biye/users'
-    }
     const bodyFormData3 = new FormData();
     bodyFormData3.set('openid', Cookies.get('openid'));
     bodyFormData3.set('iconurl', this.props.iconUrl);
@@ -232,6 +224,8 @@ class Question extends Component {
       console.log(err);
     }
   };
+  // TODO:
+  // understand this!
   // 防抖
   debounce(fun, delay) {
     let timeout = null;

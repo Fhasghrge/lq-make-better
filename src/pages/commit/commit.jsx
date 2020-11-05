@@ -13,12 +13,6 @@ class Commit extends Component {
   componentDidMount() {
     if(!this.props.islogin) this.props.history.push('/')
     const bodyFormData = new FormData();
-
-    // 异常跳转
-    if(!Cookies.get('openid')) {
-      alert('正在重新获取信息...')
-      window.location.href = 'http://starstudio.uestc.edu.cn/biye/users'
-    }
     bodyFormData.set('openid', Cookies.get('openid'));
     axios({
       method: 'post',

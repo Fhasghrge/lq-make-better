@@ -73,11 +73,6 @@ class Show extends Component {
   };
   getUserInfo() {
     const bodyFormData2 = new FormData();
-    // 异常跳转
-    if (!Cookies.get('openid')) {
-      alert('正在重新获取信息...');
-      window.location.href = 'http://starstudio.uestc.edu.cn/biye/users';
-    }
     bodyFormData2.set('openid', Cookies.get('openid'));
     return axios({
       method: 'post',

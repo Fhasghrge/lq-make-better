@@ -20,11 +20,6 @@ class Login extends Component {
       stdPasswdErr: false,
     };
   }
-  isWeixin = () => {
-    //判断是否是微信
-    const ua = navigator.userAgent.toLowerCase();
-    return ua.match(/MicroMessenger/i) === 'micromessenger';
-  };
   componentDidMount() {
     // 从Cookie获取来自微信的信息
     const { nickname, openid, iconurl } = Cookies.get();
@@ -33,13 +28,10 @@ class Login extends Component {
       openid,
       iconurl,
     };
-    // 异常跳转
-    if(!nickname || !openid || !iconurl) {
-      alert('正在获取信息...')
-      window.location.href = 'http://starstudio.uestc.edu.cn/biye/users'
-    }
     this.props.wxlogin(wxinfodata);
 
+    // TODO:
+    // understand this!
     // Fix: 软键盘导致背景压缩
     const initViewport = function (height) {
       let metaEl = document.querySelector('#viewportMeta');
